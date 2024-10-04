@@ -34,4 +34,3 @@ def typetext(str, end="\n"):
 
 typetext("im a bunch of text that needs printed")
 typetext("im a bunch of text that needs printed")
-

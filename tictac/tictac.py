@@ -87,7 +87,6 @@ def computer_move(board):
 
 def play_game():
     current_board = initialize_board()
-    winner = False
     print_board(current_board)
     while True:
 
