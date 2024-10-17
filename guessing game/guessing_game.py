@@ -88,3 +88,4 @@ if __name__ == "__main__":
             typetext("Let's go.")
         else:
             typetext("Goodbye.")
+            break
