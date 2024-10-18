@@ -1,4 +1,3 @@
-# Kerry Sowers
 import random
 
 
