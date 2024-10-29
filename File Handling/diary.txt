@@ -1,0 +1,9 @@
+2024-10-24: m 
+2024-10-24: d 
+2024-10-24: f 
+2024-10-24: s 
+2024-10-24: s 
+2024-10-24: d 
+2024-10-24: w 
+2024-10-24: f 
+2024-10-24: q2024-10-24: & C:/Users/CMP_KeSowers/AppData/Local/Microsoft/WindowsApps/python3.12.exe "c:/Users/CMP_KeSowers/Desktop/python/File Handling/assignment.py"

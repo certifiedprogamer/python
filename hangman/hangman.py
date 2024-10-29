@@ -1,6 +1,22 @@
 # Kerry Sowers
 import random
 
+def word_bank():
+    animals = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
+         'coyote crow deer dog donkey duck eagle ferret fox frog goat '
+         'goose hawk lion lizard llama mole monkey moose mouse mule newt '
+         'otter owl panda parrot pigeon python rabbit ram rat raven '
+         'rhino salmon seal shark sheep skunk sloth snake spider '
+         'stork swan tiger toad trout turkey turtle weasel whale wolf '
+         'wombat zebra ').split()
+    python = ["integer", "function", "boolean",
+             "float", "string", "dictionary", "lambda", "loop",
+             "debug", "scope"]
+    geometry = ["square", "triangle", "rhombus", "line", "segment", "angle", "area", "parallel"]
+    while True:
+        choice = input("Pick a word bank from which I will choose one. (python, geometry, animals.)")
+        
+
 
 def hangman_initialize():
     """Chooses a word from the list for the player to guess."""
