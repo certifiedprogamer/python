@@ -1,0 +1,88 @@
+{
+    "presidents": [
+      {
+        "name": "George Washington",
+        "term": {
+          "start_year": 1789,
+          "end_year": 1797
+        },
+        "party": "None",
+        "birth_year": 1732,
+        "death_year": 1799,
+        "vice_president": "John Adams",
+        "description": "The first president of the United States and one of the Founding Fathers. He set many precedents for the future presidency."
+      },
+      {
+        "name": "Abraham Lincoln",
+        "term": {
+          "start_year": 1861,
+          "end_year": 1865
+        },
+        "party": "Republican",
+        "birth_year": 1809,
+        "death_year": 1865,
+        "vice_president": "Hannibal Hamlin, Andrew Johnson",
+        "description": "The 16th president of the United States, known for leading the country through the Civil War and issuing the Emancipation Proclamation."
+      },
+      {
+        "name": "Theodore Roosevelt",
+        "term": {
+          "start_year": 1901,
+          "end_year": 1909
+        },
+        "party": "Republican",
+        "birth_year": 1858,
+        "death_year": 1919,
+        "vice_president": "Charles W. Fairbanks",
+        "description": "The 26th president, known for his progressive policies, trust-busting, and the creation of national parks."
+      },
+      {
+        "name": "Franklin D. Roosevelt",
+        "term": {
+          "start_year": 1933,
+          "end_year": 1945
+        },
+        "party": "Democratic",
+        "birth_year": 1882,
+        "death_year": 1945,
+        "vice_president": "John Nance Garner, Henry A. Wallace, Harry S. Truman",
+        "description": "The 32nd president, he led the United States through the Great Depression and most of World War II, and is the only president to serve four terms."
+      },
+      {
+        "name": "John F. Kennedy",
+        "term": {
+          "start_year": 1961,
+          "end_year": 1963
+        },
+        "party": "Democratic",
+        "birth_year": 1917,
+        "death_year": 1963,
+        "vice_president": "Lyndon B. Johnson",
+        "description": "The 35th president, known for his handling of the Cuban Missile Crisis and advocating for civil rights, his presidency was tragically cut short by assassination."
+      },
+      {
+        "name": "Ronald Reagan",
+        "term": {
+          "start_year": 1981,
+          "end_year": 1989
+        },
+        "party": "Republican",
+        "birth_year": 1911,
+        "death_year": 2004,
+        "vice_president": "George H. W. Bush",
+        "description": "The 40th president, a former actor and governor, known for his conservative policies, economic reforms, and the ending of the Cold War."
+      },
+      {
+        "name": "Barack Obama",
+        "term": {
+          "start_year": 2009,
+          "end_year": 2017
+        },
+        "party": "Democratic",
+        "birth_year": 1961,
+        "death_year": null,
+        "vice_president": "Joe Biden",
+        "description": "The 44th president, and the first African American to hold the office, known for his healthcare reforms and navigating the country through the aftermath of the 2008 financial crisis."
+      }
+    ]
+  }
