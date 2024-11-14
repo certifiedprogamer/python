@@ -69,8 +69,8 @@ def game_loop(start_num, current_score, rounds, name, high_scores):
         time.sleep(3)
         os.system('cls' if os.name == 'nt' else 'clear')
         resp = player_response()
-        current_score += 100 // resp[1]
         if resp[0] == rand_num:
+            current_score += 100 // resp[1]
             print(f"Good job! - Current score: {current_score}")
             time.sleep(1)
             os.system('cls' if os.name == 'nt' else 'clear')
