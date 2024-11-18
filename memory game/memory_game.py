@@ -5,12 +5,14 @@ import json
 
 
 def get_name():
+    """Gets the player's name"""
     print("Welcome to the Number Memory Game!")
     name = input("Enter your name:").strip()
     return name
 
 
 def get_high_scores():
+    """Fetches the current high score board"""
     with open("high_scores.json", "r") as data:
         high_scores = json.load(data)
     return high_scores
