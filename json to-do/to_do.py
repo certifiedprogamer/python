@@ -66,8 +66,13 @@ def mark_task_complete(tasks):
 
 def load_tasks():
     """Loads the tasks file"""
-    with open("tasks.json", "r") as data:
-        tasks = json.load(data)
+    try:
+        with open("tasks.json", "r") as data:
+            tasks = json.load(data)
+    except:
+        with open("tasks.json", "w") as data:
+            tasks = []
+            json.dump(tasks, f, indent=4)
     return tasks
 
 

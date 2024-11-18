@@ -23,5 +23,15 @@
         "id": "A25",
         "description": "pro",
         "status": "complete"
+    },
+    {
+        "id": "GM1",
+        "description": "create kahoot",
+        "status": "incomplete"
+    },
+    {
+        "id": "56G",
+        "description": "showcase program functionality",
+        "status": "incomplete"
     }
 ]
