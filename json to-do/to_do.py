@@ -72,7 +72,7 @@ def load_tasks():
     except:
         with open("tasks.json", "w") as data:
             tasks = []
-            json.dump(tasks, f, indent=4)
+            json.dump(tasks, data, indent=4)
     return tasks
 
 
