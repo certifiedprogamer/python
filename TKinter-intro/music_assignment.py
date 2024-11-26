@@ -20,7 +20,7 @@ def submit_preferences():
         genres_list.append("Jazz")
     listening_method = method.get()
     messagebox.showinfo("Music preferences", f"Favorite artist/band: {artist} \n Favorite genres: {
-        genres_list} \n Preferred listening method: {listening_method}")
+        ",".join(genres_list)} \n Preferred listening method: {listening_method}")
 
 
 label_welcome = tk.Label(window,
