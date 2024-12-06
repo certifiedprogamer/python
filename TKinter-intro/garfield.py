@@ -1,11 +1,36 @@
 import tkinter as tk
 from tkinter import Toplevel
 import random
+from playsound import playsound
+from threading import Thread
+import os
+
+
+def play_sound():
+    playsound("garfield.mp3")
+
+
+imgExtension = ["png", "jpeg", "jpg"]  # Image Extensions to be chosen from
+allImages = list()
+
+
+def chooseRandomImage(directory=r"C:\Users\CMP_KeSowers\Desktop\python\TKinter-intro\resources"):
+    for img in os.listdir(directory):  # Lists all files
+        ext = img.split(".")[len(img.split(".")) - 1]
+        if (ext in imgExtension):
+            allImages.append(img)
+    choice = random.randint(0, len(allImages) - 1)
+    chosenImage = allImages[choice]  # Do Whatever you want with the image file
+    return chosenImage
 
 
 def swag():
     print("B")
-    for i in range(0, 2000):
+    thread = Thread(target=play_sound)
+    thread.start()
+    for i in range(0, 1500):
+        chosen_image = chooseRandomImage()
+        print(chosen_image)
         top = Toplevel(window)
         rand1 = random.randint(-2000, 2000)
         rand2 = random.randint(-2000, 2000)
@@ -13,6 +38,9 @@ def swag():
         x = window.winfo_x()
         y = window.winfo_y()
         top.geometry("+%d+%d" % (x+rand1, y+rand2))
+        top_photo = tk.PhotoImage(file=r".\resources\garf100.png")
+        top_label = tk.Label(top, image=top_photo)
+        top_label.pack()
         top.wm_transient(window)
 
 
@@ -36,7 +64,7 @@ def center_window(window):
 center_window(window)
 
 # change the icon in the top left
-icon = tk.PhotoImage(file=r".\resources\garf.png")
+icon = tk.PhotoImage(file=r".\resources\garf100.png")
 window.iconphoto(True, icon)
 
 # change background color of window
