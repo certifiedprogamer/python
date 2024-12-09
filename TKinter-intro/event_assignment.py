@@ -39,6 +39,7 @@ def reset_selection():
     check_streaming.set(0)
     type.set("Wedding")
     scale_guests.set(0)
+    listbox_theme.activate(0)
     listbox_theme.select_set(0)
 
 
