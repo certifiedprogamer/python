@@ -13,9 +13,9 @@ def set_volume():
 
 scale = tk.Scale(window,
                  from_=0,
-                 to=100,
-                 tickinterval=25,
-                 length=200,
+                 to=500,
+                 tickinterval=50,
+                 length=500,
                  label="set the volume",
                  orient="horizontal")
 

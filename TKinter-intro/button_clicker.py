@@ -13,7 +13,7 @@ default_font = ("Arial", 20, "bold")
 window = tk.Tk()
 window.title("Clicker")
 window.geometry("400x450")
-icon = tk.PhotoImage(file=r".\resources\garf.png")
+icon = tk.PhotoImage(file=r"\resources\garf.png")
 window.iconphoto(True, icon)
 window.config(bg="#fedb00")
 button = tk.Button(window,
