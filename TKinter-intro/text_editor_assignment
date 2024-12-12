@@ -35,7 +35,7 @@ def text_area_write():
 
 window = Tk()
 window.geometry("400x400")
-
+window.title("NotePad")
 text_area = Text(window)
 text_area.pack()
 toplevel_menubar = Menu(window)
