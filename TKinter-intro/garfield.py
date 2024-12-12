@@ -28,7 +28,7 @@ def swag():
     print("B")
     thread = Thread(target=play_sound)
     thread.start()
-    for i in range(0, 5000):
+    for i in range(0, 2000):
         top = Toplevel(window)
         rand1 = random.randint(-2000, 2000)
         rand2 = random.randint(-2000, 2000)
@@ -36,11 +36,11 @@ def swag():
         x = window.winfo_x()
         y = window.winfo_y()
         top.geometry("+%d+%d" % (x+rand1, y+rand2))
-        top_photo = tk.PhotoImage(
-            file=r"C:\Users\CMP_KeSowers\Desktop\python\TKinter-intro\resources\garf100.png")
-        top_label = tk.Label(top, image=top_photo)
-        top_label.pack()
-        top.wm_transient(window)
+        # top_photo = tk.PhotoImage(
+        #    file=r"C:\Users\CMP_KeSowers\Desktop\python\TKinter-intro\resources\garf100.png")
+        # top_label = tk.Label(top, image=top_photo)
+        # top_label.pack()
+        top.wm_transient()
 
 
 default_font = ("Arial", 20, "bold")
