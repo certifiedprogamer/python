@@ -10,6 +10,7 @@ default_font = ("Arial", 20, "bold")
 
 def colorchange():
     while True:
+        time.sleep(0.05)
         red = random.randint(0, 255)
         blue = random.randint(0, 255)
         green = random.randint(0, 255)
@@ -23,6 +24,7 @@ def _from_rgb(rgb):
 
 
 def start_game():
+    button.pack_forget()
     pass
 
 
@@ -60,12 +62,12 @@ changer.start()
 # label.pack(pady=20)
 
 button = Button(window,
-                text="True....",
+                text="START",
                 font=default_font,
                 command=start_game,
-                activebackground="red",
-                activeforeground="green",
+                activebackground="black",
+                activeforeground="white",
                 )
 
-button.pack(side='top', anchor='center', pady=120)
+button.pack(side='top', anchor='center', pady=100)
 window.mainloop()
