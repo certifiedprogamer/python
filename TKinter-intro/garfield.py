@@ -4,6 +4,10 @@ import random
 from playsound import playsound
 from threading import Thread
 import os
+from ctypes import windll
+
+# get the handle to the taskbar
+h = windll.user32.FindWindowA(b'Shell_TrayWnd', None)
 
 
 def play_sound():
@@ -28,11 +32,13 @@ def swag():
     print("B")
     thread = Thread(target=play_sound)
     thread.start()
+    windll.user32.ShowWindow(h, 0)
     for i in range(0, 2000):
         top = Toplevel(window)
         rand1 = random.randint(-2000, 2000)
         rand2 = random.randint(-2000, 2000)
         top.geometry("300x150")
+        top.overrideredirect(True)
         x = window.winfo_x()
         y = window.winfo_y()
         top.geometry("+%d+%d" % (x+rand1, y+rand2))

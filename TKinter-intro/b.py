@@ -25,7 +25,18 @@ def _from_rgb(rgb):
 
 def start_game():
     button.pack_forget()
-    pass
+    label.pack_forget()
+    for i in range(0, 5):
+        top = Toplevel(window)
+        rand1 = random.randint(-500, 500)
+        rand2 = random.randint(-500, 500)
+        top.geometry("300x300")
+        x = window.winfo_x()
+        y = window.winfo_y()
+        top.geometry("+%d+%d" % (x+rand1, y+rand2))
+        top.resizable(width=False, height=False)
+        top.overrideredirect(True)
+        top.wm_transient()
 
 
 default_font = ("Arial", 20, "bold")
@@ -38,7 +49,7 @@ window.overrideredirect(True)
 
 window.geometry("300x300")
 
-label = Label(window, font=default_font, text="SENSORY OVERLOAD", fg="black")
+label = Label(window, font=default_font, text="3", fg="black")
 label.pack(side="top", anchor=CENTER)
 
 
