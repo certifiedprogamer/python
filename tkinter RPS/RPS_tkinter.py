@@ -1,6 +1,6 @@
 from tkinter import *
 from random import *
-
+import rps_tournamentclass as rps
 
 wins = 0
 losses = 0
@@ -78,6 +78,14 @@ default_font = ("Arial", 15)
 window = Tk()
 window.title("Rock, Paper, Scissors")
 window.geometry("400x400")
+
+toplevel_menubar = Menu(window)
+window.config(menu=toplevel_menubar)
+
+filemenu = Menu(toplevel_menubar, tearoff=0)
+toplevel_menubar.add_cascade(label="Options", menu=filemenu)
+filemenu.add_command(label="Tournament mode",
+                     command=rps.RPSTournament.tournament)
 
 frame_radio = Frame(window, bg="green", width=400, height=30)
 frame_radio.grid_propagate(False)

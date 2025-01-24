@@ -21,6 +21,7 @@ root = Tk()
 button = Button(text="Output file", command=save_text).pack()
 text_area = Text(root, wrap='word', height=10, width=50)
 text_area.pack(side=LEFT, fill=BOTH, expand=True)
+print(type(text_area))
 
 # Create a Scrollbar widget
 scrollbar = ttk.Scrollbar(root, orient='vertical', command=text_area.yview)
