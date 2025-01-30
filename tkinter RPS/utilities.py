@@ -19,8 +19,11 @@ class Utilities:
     def convert_to_play(p: str):
         """Converts r, p, and s into rock, paper, and scissors"""
         choice_bank = {"r": "Rock", "p": "Paper", "s": "Scissors"}
-        play = choice_bank[p]
-        return play
+        try:
+            play = choice_bank[p]
+            return play
+        except:
+            return p
 
 
 if __name__ == "__main__":
