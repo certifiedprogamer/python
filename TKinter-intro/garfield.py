@@ -32,20 +32,19 @@ def swag():
     print("B")
     thread = Thread(target=play_sound)
     thread.start()
-    windll.user32.ShowWindow(h, 0)
+    # windll.user32.ShowWindow(h, 0)
     for i in range(0, 2000):
         top = Toplevel(window)
         rand1 = random.randint(-2000, 2000)
         rand2 = random.randint(-2000, 2000)
         top.geometry("300x150")
-        top.overrideredirect(True)
+        # top.overrideredirect(True)
         x = window.winfo_x()
         y = window.winfo_y()
         top.geometry("+%d+%d" % (x+rand1, y+rand2))
-        # top_photo = tk.PhotoImage(
-        #    file=r"C:\Users\CMP_KeSowers\Desktop\python\TKinter-intro\resources\garf100.png")
-        # top_label = tk.Label(top, image=top_photo)
-        # top_label.pack()
+        top_photo = tk.PhotoImage(file=r"garf100.png")
+        top_label = tk.Label(top, image=top_photo)
+        top_label.pack()
         top.wm_transient()
 
 
