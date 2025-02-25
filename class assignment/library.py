@@ -55,7 +55,7 @@ class Library:
         for i in self.books:
             if i.checked_out == False:
                 print(
-                    f"{i.title} by {i.author} - Available")
+                    f"{i} - Available")
         print("")
 
     def find_book_by_title(self, title):
