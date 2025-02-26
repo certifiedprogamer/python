@@ -239,7 +239,7 @@ def pet_sim():
         while True:
             try:
                 action = int(input(
-                    "Choose an action: \n 1. Feed \n 2. Play \n 3. Sleep \n 4. Use Special Ability \n 5. Exit \n"))
+                    "Choose an action: \n 1. Feed 🍖\n 2. Play 🎾\n 3. Sleep 😴\n 4. Use Special Ability 💥\n 5. Exit \n"))
                 if action == 1 or action == 2 or action == 3 or action == 4 or action == 5:
                     time.sleep(1)
                     break
